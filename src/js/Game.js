@@ -32,6 +32,9 @@ export default class Game {
       this.goblin.remove();
       this.currentScore += 1;
       this.score.textContent = `Убил: ${this.currentScore}`;
+    } else {
+      this.missedCount += 1;
+      this.missed.textContent = `Промазал: ${this.missedCount}`;
     }
   }
 
